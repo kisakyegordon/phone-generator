@@ -1,0 +1,21 @@
+{
+  "name": "phone-generator",
+  "version": "1.0.0",
+  "description": "random phone generator",
+  "main": "phoneGenerator.js",
+  "scripts": {
+    "start": "node src/phoneGenerator.js",
+    "test": "jest --coverage --coverageDirectory=output/coverage --collectCoverageFrom=src/**/*.{js,jsx}"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "faker": "^4.1.0",
+    "fs": "0.0.1-security",
+    "jest": "^23.6.0",
+    "react-scripts": "^2.1.1"
+  }
+}
