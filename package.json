@@ -10,12 +10,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chai": "^4.2.0",
     "chalk": "^2.4.1",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
     "faker": "^4.1.0",
     "fs": "0.0.1-security",
     "jest": "^23.6.0",
-    "react-scripts": "^2.1.1"
+    "mocha-sinon": "^2.1.0",
+    "react-scripts": "^2.1.1",
+    "sinon": "^7.2.2"
   }
 }
