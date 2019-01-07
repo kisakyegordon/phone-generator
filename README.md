@@ -17,36 +17,37 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
-```
-- node
-- npm or yarn
-```
+- `npm or yarn`, npm comes along with the installation of node which can be installed using using `brew install node` on a mac for other platforms follow this  - [Guide](https://www.npmjs.com/get-npm).
 
-#### Installing
+## Install
 
 How to get it running on your local machine.
 
-- Cloning the project.
+- Clone the Application using this command `git clone https://github.com/kisakyegordon/phone-generator`
 
-  * while inside a desired directory, clone the phone-generator repository using https://github.com/kisakyegordon/phone-generator.
 
-- Install Packages
+## Install Required  Libraries
 
-  * enter the phone-generator repository then run the `npm install` or `yarn  install` command on the terminal to install the required libraries.
+- Enter the cloned directory.
 
-- Start The Application
+- Run `npm install` or `yarn`, to install any dependant libraries.
+
+## Start The Application
 
   * To start the application, run the `npm start` or `yarn start` commands.
+  * Starting the application also proceeds to generate a random number  each time its run, the random number relates to the number of phone contacts created each time.
 
 
-#### Running the tests
+
+
+## Running the tests
 
 To locally run the tests
 
   * run the `npm test` or `yarn test`, you can also see the whole coverage by appending --coverage ie `npm test --coverage`.
 
 
-#### How it works.
+## How it works.
 
 - After setting everything up, when you start the application with `npm start` or `yarn start`.
 
@@ -56,7 +57,14 @@ To locally run the tests
 
   2 - Smallest and Largest generated numbers are logged on the screen with their Id's.
 
-  3 - 3 files are generated ie phoneNumbers.json, phoneNumbers-asc.json and phoneNumbers-desc.json
+  3 - 3 files are generated in the applications `root-directory` ie
+  - phoneNumbers.json - Contains all generated phone numbers.
+
+
+  - phoneNumbers-asc.json - Contains generated phone numbers arranged in Ascending order.
+
+
+  - phoneNumbers-desc.json - Contains generated phone numbers arranged in Deccending order
 
   ![Screenshot](./docs/screenshot.png)
 `Logged Information`
