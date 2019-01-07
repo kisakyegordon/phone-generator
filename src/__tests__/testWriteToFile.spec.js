@@ -1,19 +1,14 @@
-// const expect = require('chai').expect;
 const writeToFile = require('../writeToFile');
-const sortSmallest = require('../sortSmallest');
 const generateNumbers = require('../generateNumbers')
-const chalk = require('chalk');
-
-const log = console.log;
 
 const data = generateNumbers();
-jest.mock('../sortSmallest', () => jest.fn());
 
-describe("WriteToFile Tests", () => {
+describe("WriteToFile Tests", function() {
 
-    it("tests if sortSmallest is called when writeToFile is called", async (done) => {
-        await writeToFile(data);
-        done();
-        // expect(global.console.log).toHaveBeenCalled();
+    it("tests if writeToFile runs as expected when called", function (done) {
+        writeToFile("phoneNumbers.json", data, function (err, result) {
+            expect(result).toBe(true);
+            done()
+        });
     });
 });

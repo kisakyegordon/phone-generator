@@ -4,7 +4,7 @@ const fs = require('fs');
 const log = console.log;
 let smallest;
 
-const sortSmallest = (phoneNumbers) => {
+function sortSmallest (phoneNumbers) {
   const collator = new Intl.Collator(undefined, {numeric: true, sensitivity: 'base'});
   phoneNumbers.sort(function(a, b) { return collator.compare(a.number, b.number) });
   fs.writeFile ("phoneNumbers-asc.json", JSON.stringify(phoneNumbers, null, 2), () => {})
