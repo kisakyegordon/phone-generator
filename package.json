@@ -6,7 +6,7 @@
   "reporter": ["clover", "lcov"],
   "scripts": {
     "start": "node src/phoneGenerator.js",
-    "test": "jest --coverage --coverageDirectory=output/coverage --collectCoverageFrom=src/**/*.{js,jsx}"
+    "test": "jest --coverage --coverageDirectory=coverage --collectCoverageFrom=src/**/*.{js,jsx}"
   },
   "author": "",
   "license": "ISC",
