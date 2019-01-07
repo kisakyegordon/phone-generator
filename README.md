@@ -1,3 +1,4 @@
+[![Test Coverage](https://api.codeclimate.com/v1/badges/e03b07bf9bfae270dd5b/test_coverage)](https://codeclimate.com/github/kisakyegordon/phone-generator/test_coverage)
 # Random Phone Generator
 
 Node application that Generates Random Phone Numbers.
