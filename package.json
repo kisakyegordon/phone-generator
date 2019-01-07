@@ -5,7 +5,7 @@
   "main": "phoneGenerator.js",
   "scripts": {
     "start": "node src/phoneGenerator.js",
-    "test": "jest --coverage --coverageDirectory=output/coverage --collectCoverageFrom=src/**/*.{js,jsx}"
+    "test": "react-scripts test --env=jsdom"
   },
   "author": "",
   "license": "ISC",
