@@ -5,7 +5,7 @@
   "main": "phoneGenerator.js",
   "scripts": {
     "start": "node src/phoneGenerator.js",
-    "test": "jest --coverage ./coverage/lcov.info"
+    "test": "jest --coverage ./coverage/clover.xml"
   },
   "author": "",
   "license": "ISC",
