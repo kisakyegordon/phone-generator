@@ -4,9 +4,7 @@ const writeToFile = require('./writeToFile');
 function PhoneGenerator() {
   const data = generateNumbers();
 
-  return (
-    writeToFile(data)
-  );
+  writeToFile("phoneNumbers.json", data)
 };
 
 module.exports = PhoneGenerator;

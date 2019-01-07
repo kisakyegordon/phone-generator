@@ -1,10 +1,15 @@
-// import { shallow, configure } from 'enzyme';
-// import Adapter from 'enzyme-adapter-react-16';
 const PhoneGenerator = require('../phoneGenerator');
+const writeToFile = require('../writeToFile');
+const generateNumbers = require('../generateNumbers')
 
-// configure({ adapter: new Adapter() });
+const data = generateNumbers();
+
+jest.mock('../writeToFile', () => jest.fn());
 
 describe("Phone Generator", () => {
     it("tests for phone generator", () => {
-    })
-})
+        PhoneGenerator();
+        expect(writeToFile.mock.calls.length).toBe(2);
+        writeToFile.mockReset()
+    });
+});
